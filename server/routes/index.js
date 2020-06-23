@@ -1,12 +1,17 @@
 const express = require('express');
 const router = express.Router();
+const nosotrosController = require('../controllers/nosotrosController');
+const homeController = require('../controllers/homeController');
+const viajesController = require('../controllers/viajesController');
+const testimonialesController = require('../controllers/testimonialesController');
 
 module.exports = function(){
-    router.get('/', (req, res) => {
-        res.render('index');
-    });
-    router.get('/nosotros', (req, res) => {
-        res.render('nosotros');
-    });
-    return router;
+	router.get('/', homeController.consultasHomePage);
+	router.get('/nosotros',nosotrosController.infoNosotros);
+	router.get('/viajes', viajesController.infoViajes);
+	router.get('/viajes/:id', viajesController.infoViaje);
+	router.get('/testimoniales', testimonialesController.infoTestimoniales);
+	router.post('/testimoniales', testimonialesController.guardarTestimonial);
+
+	return router;
 }

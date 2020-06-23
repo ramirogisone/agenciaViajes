@@ -60,7 +60,7 @@ h3 {
 .home {
     position: relative;
 }
-.home .navegacion {
+.home .navigation {
     background: transparent;
     position: absolute;
     top: 0;
@@ -78,7 +78,7 @@ p {
     font-size: 1.2rem;
     line-height: 2;
 }
-.navegacion {
+.navigation {
     background-color: #15B9D5;
 }
 header .nav a {
