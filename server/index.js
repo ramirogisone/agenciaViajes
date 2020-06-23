@@ -4,12 +4,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const routes = require('./routes');
 const configs = require('./config');
-// const db = require('./config/database');
-require('dotenv').config({path: 'variables.env'});
 
-/* db.authenticate()
-	.then(() => console.log('DB conectada'))
-	.catch(error => console.log(error)); */
+require('dotenv').config({path: 'variables.env'});
 
 //configurar express
 const app = express();

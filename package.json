@@ -2,6 +2,10 @@
 	"name": "intronodejs",
 	"version": "1.0.0",
 	"description": "Proyecto de introducción a NodeJS",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ramirogisone/agenciaViajes.git"
+	},
 	"main": "index.js",
 	"scripts": {
 		"dev": "nodemon server",
